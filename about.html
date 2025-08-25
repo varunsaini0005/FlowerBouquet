@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete responsive flower website design tutorial - About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <header class="fixed-top shadow-sm bg-white py-3">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <a href="Index.html" class="logo text-decoration-none fs-1 fw-bold text-dark">Bouquet<span
+                    class="text-info">&#128144;</span></a>
+
+            <nav class="navbar navbar-expand-lg d-none d-lg-block">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link fs-4 px-3 text-secondary" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4 px-3 text-secondary" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4 px-3 text-secondary" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4 px-3 text-secondary" href="review.html">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4 px-3 text-secondary" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="btn border d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="bi bi-list fs-3"></span>
+            </button>
+        </div>
+        </div>
+    </header>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="review.html">Review</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section class="about" id="about" style="padding-top: 6rem;">
+        <h1 class="heading text-center display-4 fw-normal mb-5 py-3">
+            <span>about </span><span class="text-info">us</span>
+        </h1>
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-md-6">
+                    <div class="video_container position-relative">
+                        <video class="w-100 rounded shadow border border-white border-5" src="/Images/video.mp4" loop autoplay muted></video>
+                        <h3 class="position-absolute top-50 start-50 translate-middle w-100 text-center fw-bold bg-white p-3 fs-3">best
+                            flower sellers</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="content">
+                        <h3 class="fs-2 text-dark">why choose us?</h3>
+                        <!-- The "Automatic description" text is added here -->
+                    
+                        <!-- Your original text is now inside this div -->
+                        <div id="text-to-read">
+                            <p class="text-secondary mt-3 fs-5">Choosing Bouquet of Fresh Flowers is about more than just buying flowers
+                                it's about investing in an experience that is a cut above the rest. We are dedicated to providing unmatched
+                                freshness, with every bloom meticulously selected and handled with care to ensure it arrives vibrant and
+                                full of life. Our platform is an exercise in effortless elegance, designed to be intuitive and beautiful, allowing
+                                you to find the perfect arrangement with ease. We stand by our promise of unwavering quality and trust, from our
+                                expert florists who craft unique, stunning bouquets to our seamless, secure ordering and reliable delivery.
+                                By choosing us, you are choosing a partner in every special moment, ensuring that your thoughtful gesture is
+                                delivered with the beauty and distinction it deserves.</p>
+                            <p class="text-secondary mt-3 fs-5">We stand by our promise of unwavering quality and trust, from our
+                                expert florists who craft unique, stunning bouquets to our seamless, secure ordering and reliable delivery.
+                                By choosing us, you are choosing a partner in every special moment, ensuring that your thoughtful gesture is
+                                delivered with the beauty and distinction it deserves.</p>
+                        </div>
+                        <!-- The "Read Aloud" button is now linked to the updated JavaScript function -->
+                        <a href="#" class="btn btn-dark text-white rounded-pill px-4 py-2 mt-3 fw-bold" onclick="readAloud()">Read Aloud</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 bg-transparent">
+                        <h3 class="fs-4 text-dark mb-3">quick links</h3>
+                        <a href="Index.html" class="text-secondary d-block py-1">home</a>
+                        <a href="about.html" class="text-secondary d-block py-1">about</a>
+                        <a href="products.html" class="text-secondary d-block py-1">products</a>
+                        <a href="review.html" class="text-secondary d-block py-1">review</a>
+                        <a href="contact.html" class="text-secondary d-block py-1">contact</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 bg-transparent">
+                        <h3 class="fs-4 text-dark mb-3">locations</h3>
+                        <a href="#" class="text-secondary d-block py-1">Auckland, Flat Bush, New Zealand - 2019</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 bg-transparent">
+                        <h3 class="fs-4 text-dark mb-3">contact info</h3>
+                        <a href="#" class="text-secondary d-block py-1">+64 204465778</a>
+                        <a href="#" class="text-secondary d-block py-1">+ 91 9056585646</a>
+                        <a href="#" class="text-secondary d-block py-1">varunsaini366@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center border-top py-3 mt-3">
+            <div class="credit fs-5 text-dark">
+                Created by <span class="text-info">MR Varun Saini</span> | all rights reserved
+            </div>
+        </div>
+    </section>
+    <!-- Updated JavaScript for Read Aloud functionality -->
+    <script>
+        function readAloud() {
+            // Check if the browser is currently speaking
+            if (window.speechSynthesis.speaking) {
+                // If it is, stop the speech
+                window.speechSynthesis.cancel();
+            } else {
+                // If it's not speaking, start the speech
+                const textToRead = document.getElementById('text-to-read').innerText;
+                if ('speechSynthesis' in window) {
+                    const utterance = new SpeechSynthesisUtterance(textToRead);
+                    window.speechSynthesis.speak(utterance);
+                } else {
+                    console.log('Your browser does not support the Web Speech API.');
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
