@@ -1,0 +1,175 @@
+/* Custom styles not covered by Bootstrap */
+/* You can add more custom styles here if needed */
+
+body {
+    /* background-color: #fdc5f5; */
+}
+
+/* Base styles for font and transitions */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+/* Header adjustments */
+.logo span {
+    color: #fdc5f5;
+}
+
+.navbar a:hover {
+    color: #fdc5f5;
+    font-weight: 500;
+}
+
+.d-flex a:hover {
+    color: #fb6f92;
+    font-weight: 600;
+}
+
+/* Custom styles for home section */
+.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(home.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home .content h3 {
+    color: #ffe5ec;
+}
+
+.home .content span {
+    color: #ff8fab;
+}
+
+.btn:hover {
+    background-color: #fb6f92;
+}
+
+/* Custom styles for about section */
+.heading span {
+    color: #fb6f92;
+}
+
+.about .video_container h3 {
+    mix-blend-mode: screen;
+}
+
+/* Custom styles for product section */
+.product-icons {
+    height: 7rem;
+    line-height: 7rem;
+    bottom: -7rem;
+    transition: all 0.3s ease;
+}
+
+.col-lg-3:hover .product-icons {
+    bottom: 0;
+}
+
+.card-footer .price span {
+    font-size: 1.5rem;
+}
+
+/* -------------------------------------- */
+/* Advanced 3D Tilt Hover Effect - Best one */
+/* -------------------------------------- */
+
+/* Set up the 3D perspective for the parent container */
+.products .container {
+    perspective: 1000px;
+}
+
+/* Base styles for the card, enabling 3D transforms */
+.card {
+    transition: transform 0.4s ease-in-out;
+    transform-style: preserve-3d;
+    transform: rotateX(0) rotateY(0); /* Initial state */
+    position: relative;
+    z-index: 1; /* Ensures the hovered card is on top */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial shadow */
+}
+
+/* On hover, apply the 3D rotation and a more prominent shadow */
+.card:hover {
+    transform: scale(1.05) rotateX(5deg) rotateY(5deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+/* On hover, slightly zoom the image for a pop-out effect */
+.card:hover .card-body img {
+    transform: scale(1.1); /* Image zooms more aggressively */
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Adjust the product icons to be visible on hover and move with the card */
+.col-lg-3:hover .product-icons {
+    bottom: 0;
+    transition: bottom 0.4s ease-in-out;
+    transform: translateZ(50px); /* Pushes icons forward in 3D space */
+}
+
+/* Final touches for a smoother look */
+.card-body, .card-footer {
+    transform: translateZ(0); /* Prevents content from glitching */
+}
+
+/* Custom styles for review section */
+.review .card {
+    border: 1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.review .card .bi-quote {
+    color: #eee;
+}
+
+/* Custom styles for contact section */
+.contact input.form-control,
+.contact textarea.form-control {
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.contact input.form-control:focus,
+.contact textarea.form-control:focus {
+    border-color: #fb6f92;
+    box-shadow: 0 0 0 0.25rem rgba(251, 111, 146, 0.25);
+}
+
+/* Custom styles for footer section */
+.footer .credit span {
+    color: #fb6f92;
+}
+
+.footer .card a:hover {
+    color: #fb6f92;
+    text-decoration: underline !important;
+}
+
+/* Media Queries (converted to Bootstrap breakpoints) */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
