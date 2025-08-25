@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete responsive flower website design tutorial - Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <header class="fixed-top shadow-sm bg-white py-3">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <a href="Index.html" class="logo text-decoration-none fs-1 fw-bold text-dark">Bouquet<span
+                    class="text-info">&#128144;</span></a>
+
+            <nav class="navbar navbar-expand-lg d-none d-lg-block">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link fs-4 px-3 text-secondary" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4 px-3 text-secondary" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4 px-3 text-secondary" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4 px-3 text-secondary" href="review.html">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4 px-3 text-secondary" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="btn border d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="bi bi-list fs-3"></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="review.html">Review</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+   <section class="contact" id="contact" style="padding-top: 6rem;">
+        <h1 class="heading text-center display-4 fw-normal mb-5 py-3"><span class="text-info">contact </span>us</h1>
+        <div class="container">
+            <div class="row flex-row-reverse align-items-center g-4">
+                <div class="col-12 col-md-6">
+                    <form action="connect.php" method="post" class="p-4 shadow-sm border rounded">
+                        <input type="text" name="name" placeholder="name" class="form-control mb-3" aria-label="Name">
+                        <input type="email" name="email" placeholder="email" class="form-control mb-3"
+                            aria-label="Email">
+                        <input type="number" name="number" placeholder="number" class="form-control mb-3"
+                            aria-label="Number">
+                        <textarea name="message" class="form-control mb-3" placeholder="message" id="" cols="30"
+                            rows="10"></textarea>
+                        <div class="g-recaptcha my-3" data-sitekey="6Ld_f6UrAAAAANWZX7HV5rrtAkeUO_G1tL9bMoa0"></div>
+                        <input type="submit" value="send message"
+                            class="btn btn-dark text-white rounded-pill px-4 py-2 fw-bold">
+                    </form>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="image">
+                        <img src="/Images/contact_img.jpeg" class="img-fluid" alt="Contact Us">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 bg-transparent">
+                        <h3 class="fs-4 text-dark mb-3">quick links</h3>
+                        <a href="Index.html" class="text-secondary d-block py-1">home</a>
+                        <a href="about.html" class="text-secondary d-block py-1">about</a>
+                        <a href="products.html" class="text-secondary d-block py-1">products</a>
+                        <a href="review.html" class="text-secondary d-block py-1">review</a>
+                        <a href="contact.html" class="text-secondary d-block py-1">contact</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 bg-transparent">
+                        <h3 class="fs-4 text-dark mb-3">locations</h3>
+                        <a href="#" class="text-secondary d-block py-1">Auckland, Flat Bush, New Zealand - 2019</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 bg-transparent">
+                        <h3 class="fs-4 text-dark mb-3">contact info</h3>
+                        <a href="#" class="text-secondary d-block py-1">+64 204465778</a>
+                        <a href="#" class="text-secondary d-block py-1">+ 91 9056585646</a>
+                        <a href="#" class="text-secondary d-block py-1">varunsaini366@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center border-top py-3 mt-3">
+            <div class="credit fs-5 text-dark">
+                Created by <span class="text-info">MR Varun Saini</span> | all rights reserved
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
